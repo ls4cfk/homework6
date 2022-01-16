@@ -1,0 +1,12 @@
+register
+
+curl -i -s -k -X $'POST' \
+    -H $'User-Agent: PostmanRuntime/7.28.4' -H $'Accept: */*' -H $'Postman-Token: 238039a9-7404-49f1-a858-62c9d061e47d' -H $'Host: 127.0.0.1:8000' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -H $'Content-Length: 0' \
+    -b $'XSRF-TOKEN=eyJpdiI6Ino5ODRiUEtLNUJrWFIxRzVjRzdYaWc9PSIsInZhbHVlIjoiSHJqVHozaE5LMWRqSkpMd0M0VmFvRFozSVUrY1NLY0VnR0Z0eko2T3pkNzdtQmhBK2h6U0Njb3pCdDNaTmdnanBnb1ZNQ1pDVDdpYUlZdEc0SDByZEsvaTJIVlhpMTR5OGlLallQQTRSL3pZeStHL0ExZjlkK3JLUTBvSjljYzYiLCJtYWMiOiJlZmRmNTU1MWMyOTliZTg3ODRkNGYxYTBmYWJlZmNlNWZhMTc2NDVmYzljMWI4NDhiMGYzNjcyZGMzYjRiNGQ2IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkF0ZVdlbmtHdTF1ZWZxTEZRWGtHSkE9PSIsInZhbHVlIjoiZklNMUo2b0tyVmtIdXYxSGV5dzJRSU1YTVR4bytaR0NBclFEM0gydTNzTVcvdFlKaTRMWVRERTVxRU9VYWtRV3NPUU9tWTNSNzFMOWJxdHBHSTNJaVZ5NG9zaGZKT0VYd2tVY2pCNXBiT1g5VFRFOEVmL3k5L2loMXRpUDB0cHkiLCJtYWMiOiIzNTdlOGIwMWY0MGNhYTE4NTc2MzNjYjQ2OWJkMDUxMmY3YjBlMDJiYzJmZTI2Mzk4MDJlNzcyZjg3ZDUxNjc1IiwidGFnIjoiIn0%3D' \
+    $'http://127.0.0.1:8000/api/auth/register?name=test&email=aleksaaa@pm.me&password=LE27b5sq@%23%23@&password_confirmation=LE27b5sq@%23%23@'
+
+login
+curl -i -s -k -X $'POST' \
+    -H $'User-Agent: PostmanRuntime/7.28.4' -H $'Accept: */*' -H $'Postman-Token: 3785303e-9ed5-400e-8bfa-88c5a5321509' -H $'Host: 127.0.0.1:8000' -H $'Accept-Encoding: gzip, deflate' -H $'Connection: close' -H $'Content-Length: 0' \
+    -b $'XSRF-TOKEN=eyJpdiI6Ino5ODRiUEtLNUJrWFIxRzVjRzdYaWc9PSIsInZhbHVlIjoiSHJqVHozaE5LMWRqSkpMd0M0VmFvRFozSVUrY1NLY0VnR0Z0eko2T3pkNzdtQmhBK2h6U0Njb3pCdDNaTmdnanBnb1ZNQ1pDVDdpYUlZdEc0SDByZEsvaTJIVlhpMTR5OGlLallQQTRSL3pZeStHL0ExZjlkK3JLUTBvSjljYzYiLCJtYWMiOiJlZmRmNTU1MWMyOTliZTg3ODRkNGYxYTBmYWJlZmNlNWZhMTc2NDVmYzljMWI4NDhiMGYzNjcyZGMzYjRiNGQ2IiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6IkF0ZVdlbmtHdTF1ZWZxTEZRWGtHSkE9PSIsInZhbHVlIjoiZklNMUo2b0tyVmtIdXYxSGV5dzJRSU1YTVR4bytaR0NBclFEM0gydTNzTVcvdFlKaTRMWVRERTVxRU9VYWtRV3NPUU9tWTNSNzFMOWJxdHBHSTNJaVZ5NG9zaGZKT0VYd2tVY2pCNXBiT1g5VFRFOEVmL3k5L2loMXRpUDB0cHkiLCJtYWMiOiIzNTdlOGIwMWY0MGNhYTE4NTc2MzNjYjQ2OWJkMDUxMmY3YjBlMDJiYzJmZTI2Mzk4MDJlNzcyZjg3ZDUxNjc1IiwidGFnIjoiIn0%3D' \
+    $'http://127.0.0.1:8000/api/auth/login?email=aleksaaa@pm.me&password=LE27b5sq@%23%23@'
